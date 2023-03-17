@@ -86,4 +86,6 @@ p_mesh_crop = tr_mesh[0].crop(bbox)
 print("Generate TriangleMesh Done.")
 
 # visualization
-o3d.visualization.draw_geometries([p_mesh_crop, pcd, pcd2])
+# o3d.visualization.draw_geometries([p_mesh_crop, pcd, pcd2])
+# in open3d we just need do like this to export mesh surfaces 
+o3d.io.write_triangle_mesh("test.ply", p_mesh_crop)
