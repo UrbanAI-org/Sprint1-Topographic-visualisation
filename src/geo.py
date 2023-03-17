@@ -5,7 +5,7 @@ import numpy as np
 import open3d as o3d
 from multiprocessing.pool import ThreadPool
 from collections import deque
-geo_tiff = GeoTiff('s34_e151_1arc_v3.tif')
+geo_tiff = GeoTiff('s29_e153_1arc_v3.tiff')
 # the original crs code
 print(geo_tiff.crs_code)
 # the current crs code
